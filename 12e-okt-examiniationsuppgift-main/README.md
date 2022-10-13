@@ -18,10 +18,10 @@ Se mappen mockups för designen!
 
 ## Färger
 
-* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span>
-* <span style="background-color:#FAB131; padding: 0 1rem; color: black;">#FAB131</span>
-* <span style="background-color:#C7DDEA; padding: 0 1rem; color: black;">#C7DDEA</span>
-* <span style="background-color:#A9A19E; padding: 0 1rem">#A9A19E</span>
+* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
+* <span style="background-color:#FAB131; padding: 0 1rem; color: black;">#FAB131</span> <!--yellow>
+* <span style="background-color:#C7DDEA; padding: 0 1rem; color: black;">#C7DDEA</span> <!--blue>
+* <span style="background-color:#A9A19E; padding: 0 1rem">#A9A19E</span> <!--grey>
 
 ## Fonter
 
