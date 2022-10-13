@@ -14,7 +14,7 @@ Se mappen mockups för designen!
 * Publicerad på github pages
 * SEO testad. Minsta krav är 90% i SEO Lighthouse.
 
-* Några enkla transitions (Friviligt krav)
+* Några enkla transitions (Frivilligt krav)
 
 ## Färger
 
