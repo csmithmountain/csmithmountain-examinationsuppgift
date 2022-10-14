@@ -1,4 +1,4 @@
-.buttons {
+.buttons, .desktop-button {
     display: flex;
     background-color: #fff;
 
@@ -9,4 +9,18 @@
 
     align-items: center;
     justify-content: space-evenly;
+}
+
+    // Test för att få knapp att försvinna/dyka upp i mobilt/desktop
+
+@media screen and (max-width:767px) {
+    .desktop-button {
+        display: none;
+    }   
+}
+
+@media screen and (min-width:768px) {
+    .desktop-button {
+        display: block;
+    }
 }
