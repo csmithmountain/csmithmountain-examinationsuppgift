@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Frank+Ruhl+Libre:wght@700&display=swap');
 
 p, button, li {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
+    line-height: 2;
+    font-size: 14px;
+}
+
+p {
+  color: rgba($color: #00000000, $alpha: .5);
 }
 
 h1, h2, h3 {
@@ -13,3 +17,10 @@ h1, h2, h3 {
 h3 {
     margin: 0;
 }
+
+
+em {
+    color: rgba($color: #ffffff, $alpha: 1.0);
+    font-style: normal;
+}
+

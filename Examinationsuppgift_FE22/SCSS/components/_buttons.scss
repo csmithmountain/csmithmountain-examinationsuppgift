@@ -1,4 +1,19 @@
-.buttons, .desktop-button {
+.buttons {
+    display: flex;
+    background-color: #fff;
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    padding: 1em;
+    border-radius: 9999px;
+    box-shadow: 0px 3px 1px #c4c4c4;
+    width: 13rem;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+.desktop-button {
     display: flex;
     background-color: #fff;
 

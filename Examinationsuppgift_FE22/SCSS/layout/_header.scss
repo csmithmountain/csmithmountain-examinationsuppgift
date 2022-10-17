@@ -6,6 +6,12 @@
 .header-card:first-child {
     background-color: #C7DDEA;
     padding: 3em 1em 0 1em;
+    
+  
+    
+    img {
+        transform: translateY(.25em);
+    }
 }
 
 .header-card:nth-child(2) {
@@ -31,16 +37,15 @@ h2 {
     margin: 0;
 }
 
+
+
 /* Header for contact page */
 
 .header-contact {
     background-color: #C7DDEA;
 }
 
-em {
-    color: white;
-    font-style: normal;
-}
+
 
 
 /* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
