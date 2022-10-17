@@ -31,3 +31,48 @@
     }
 
 }
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #a9a19e;
+    
+    
+}
+
+.company-adress {
+    background-color: #FAB131;
+    width: 80%;
+    align-self: center;
+    height: 10rem;
+    color: white;
+    padding: 1.5em;
+    transform: translateY(6em);
+
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    h1, p {
+        color: white;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-left: 1.2em;
+    }
+
+    .footer-map {
+       z-index: -7;
+       position: absolute;
+       width: 100%;
+       
+       img {
+        object-fit: cover;
+        
+       }
+        
+    }
+}

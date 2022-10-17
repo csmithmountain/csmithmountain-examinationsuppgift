@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .buttons {
   display: flex;
   background-color: #fff;
@@ -98,6 +102,42 @@ img {
   background-color: #FAB131;
 }
 
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #a9a19e;
+}
+
+.company-adress {
+  background-color: #FAB131;
+  width: 80%;
+  align-self: center;
+  height: 10rem;
+  color: white;
+  padding: 1.5em;
+  transform: translateY(6em);
+}
+.company-adress h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+.company-adress h1, .company-adress p {
+  color: white;
+  margin: 0 auto;
+}
+.company-adress p {
+  margin-left: 1.2em;
+}
+.company-adress .footer-map {
+  z-index: -7;
+  position: absolute;
+  width: 100%;
+}
+.company-adress .footer-map img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* Header for landing page */
 .header-card {
   padding: 1em;
@@ -136,7 +176,28 @@ h2 {
 
 /* Header for contact page */
 .header-contact {
+  display: flex;
+  width: 100%;
   background-color: #C7DDEA;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(/Examinationsuppgift_FE22/assets/man-baby.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: bottom;
+  background-size: auto;
+  height: 21rem;
+}
+.header-contact .contact-title {
+  font-size: 3rem;
+  width: 70%;
+  padding-left: 0.5em;
+}
+.header-contact .man-boy {
+  scale: 0.8;
+  transform: translateY(2.92em);
 }
 
 /* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
@@ -161,6 +222,55 @@ h2 {
 
 .page-form {
   background-color: #A9A19E;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.page-form .buttons {
+  align-self: flex-end;
+  margin-right: 1.3rem;
+}
+.page-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.input-text {
+  margin: 0;
+  padding-left: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-email {
+  width: 85%;
+  padding: 0.5rem;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-message {
+  width: 85%;
+  padding: 0.5rem;
+  height: 10rem;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+.input-message::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+.input-message:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+.input-message::placeholder {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .card-text {
@@ -309,7 +419,7 @@ h2 {
   background-color: #f17949;
 }
 
-p, button, li {
+p, button, li, textarea {
   font-family: "Fira Sans", sans-serif;
   line-height: 2;
   font-size: 14px;

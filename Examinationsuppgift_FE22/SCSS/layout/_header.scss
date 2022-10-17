@@ -42,7 +42,33 @@ h2 {
 /* Header for contact page */
 
 .header-contact {
+    display: flex;
+    width: 100%;
     background-color: #C7DDEA;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+   
+    background-image: url(/Examinationsuppgift_FE22/assets/man-baby.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: bottom;
+    background-size: auto;
+   
+    height: 21rem;
+    
+
+    .contact-title {
+        font-size: 3rem;
+        width: 70%;
+        padding-left: .5em;
+    }
+
+    .man-boy {
+        scale: .8;
+        transform: translateY(2.92em);
+    }
 }
 
 
