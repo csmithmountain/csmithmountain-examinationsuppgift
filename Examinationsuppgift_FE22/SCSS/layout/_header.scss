@@ -1,15 +1,34 @@
 /* Header for landing page */
+.header-card {
+    padding: 1em;
+}
 
 .header-card:first-child {
     background-color: #C7DDEA;
+    padding: 3em 1em 0 1em;
 }
 
 .header-card:nth-child(2) {
     background-color: #F17949;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
 }
 
 .header-card:last-child {
     background-color: #FAB131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+h2 {
+    color: white;
+    margin: 0;
 }
 
 /* Header for contact page */
@@ -22,6 +41,8 @@ em {
     color: white;
     font-style: normal;
 }
+
+
 /* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
 * <span style="background-color:#FAB131; padding: 0 1rem; color: black;">#FAB131</span> <!--yellow>
 * <span style="background-color:#C7DDEA; padding: 0 1rem; color: black;">#C7DDEA</span> <!--blue>

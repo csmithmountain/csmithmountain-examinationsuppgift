@@ -26,7 +26,7 @@
           little as <em>$0.4 per pay.</em>
         </p>
         <button class="buttons">JOIN NOW</button>
-        <img src="assets/family.png" alt="family" />
+        <img class="family" src="assets/family.png" alt="family" />
       </div>
       <!-- card two -->
       <div class="header-card">
@@ -54,54 +54,80 @@
     </nav>
 
     <!-- Main section -->
-    <sectionn class="page-section">
+    <section class="page-section">
       <h1>Your personal financial safety net online</h1>
-      <button class="buttons">JOIN NOW</button>
+      <button class="desktop-button">JOIN NOW</button>
+      <!-- Hur gömma knapp i mobil-läge och få fram i desktop? -->
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
         ligula vel felis cursus egestas. Etiam consectetur finibus facilisis.
         Proin accumsan auctor purus, quis finibus tellus accumsan id.
       </p>
-      <div class="img-card">
-        <img src="assets/child.png" alt="child-boy" />
-        <h3>Children</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
-          ligula vel felis cursus egestas. Etiam consectetur finibus facilisis.
-          Proin accumsan auctor purus, quis finibus tellus accumsan id.
-        </p>
+
+      <div class="page-card">
+        <div class="card-container-child">
+          <img class="card-img child" src="assets/child_edit.png" alt="child-boy" />
+        </div>
+        <div class="card-text">
+          <h3>Children</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
+            ligula vel felis cursus egestas. Etiam consectetur finibus
+            facilisis.Proin accumsan auctor purus, quis finibus tellus accumsan
+            id.
+          </p>
+        </div>
       </div>
-      <div class="img-card">
-        <img src="assets/adult.png" alt="adult-woman" />
-        <h3>Just right</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
-          ligula vel felis cursus egestas. Etiam consectetur finibus facilisis.
-          Proin accumsan auctor purus, quis finibus tellus accumsan id.
-        </p>
+
+      <div class="page-card">
+        <div class="card-container-adult">
+          <img class="card-img adult" src="assets/adult_edit.png" alt="adult-woman" />
+        </div>
+        <div class="card-text">
+          <h3>Just right</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
+            ligula vel felis cursus egestas. Etiam consectetur finibus
+            facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan
+            id.
+          </p>
+        </div>
       </div>
-      <div class="img-card">
-        <img src="assets/old.png" alt="old-man" />
-        <h3>Old fart</h3>
-        <p></p>
+
+      <div class="page-card">
+        <div class="card-container-old">
+          <img class="card-img old" src="assets/old_edit.png" alt="old-man" />
+        </div>
+        <div class="card-text">
+          <h3>Old fart</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
+            ligula vel felis cursus egestas. Etiam consectetur finibus
+            facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan
+            id.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="page-section">
-      <h1>About us</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-        ultricies massa. Donec id malesuada magna. Pellentesque aliquet libero
-        erat, fermentum commodo sapien congue ac. Integer a elit lorem.
-        Vestibulum id venenatis diam, et eleifend augue. Curabitur ex tortor,
-        auctor lobortis augue at, euismod bibendum neque. Aenean ullamcorper
-        nibh vitae orci laoreet, eu dictum nisi ultrices. Sed condimentum nibh
-        neque, at ultricies augue facilisis non.
-        <br>
-        Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean
-        imperdiet, leo nec consectetur blandit, risus erat commodo tortor, sit
-        amet dignissim orci lorem vel felis. Ut tempus dignissim.
-      </p>
+    <section class="page-section-two">
+      <div class="section-text">
+        <h1>About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+          ultricies massa. Donec id malesuada magna. Pellentesque aliquet libero
+          erat, fermentum commodo sapien congue ac. Integer a elit lorem.
+          Vestibulum id venenatis diam, et eleifend augue. Curabitur ex tortor,
+          auctor lobortis augue at, euismod bibendum neque. Aenean ullamcorper
+          nibh vitae orci laoreet, eu dictum nisi ultrices. Sed condimentum nibh
+          neque, at ultricies augue facilisis non.
+        </p>
+        <p>
+          Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean
+          imperdiet, leo nec consectetur blandit, risus erat commodo tortor, sit
+          amet dignissim orci lorem vel felis. Ut tempus dignissim.
+        </p>
+      </div>
     </section>
 
     <!-- flexbox  -->
@@ -131,11 +157,12 @@
 
     <footer class="page-footer">
       <a href="#anchor"
-        ><button class="footer-button"> <!-- transition till toppen på button -->
+        ><button class="footer-button">
+          <!-- transition till toppen på button -->
           &#94; <br />
           Take me up again!
-        </button></a>
-      
+        </button></a
+      >
     </footer>
   </body>
 </html>
