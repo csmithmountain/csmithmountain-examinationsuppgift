@@ -56,3 +56,10 @@
 
     }
 }
+
+@media screen and (min-width:900px) {
+    .list-item {
+        width: 17%;
+        justify-content: center;
+    }
+}
