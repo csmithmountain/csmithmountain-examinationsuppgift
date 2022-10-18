@@ -50,14 +50,21 @@ textarea {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 899px) {
   .desktop-button {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .desktop-button {
     display: block;
+    width: 10rem;
+    padding: 0.7em;
+  }
+  .buttons {
+    width: 10rem;
+    padding: 0.7em;
+    margin-left: 5.2rem;
   }
 }
 img {
@@ -144,19 +151,15 @@ img {
 }
 
 /* Header for landing page */
-.header-card {
-  padding: 1em;
-}
-
 .header-card:first-child {
   background-color: #C7DDEA;
-  padding: 3em 1em 0 1em;
+  padding: 1em 1em 0 1em;
 }
 .header-card:first-child img {
   transform: translateY(0.25em);
 }
 
-.header-card:nth-child(2) {
+.card-items:first-child {
   background-color: #F17949;
   display: flex;
   flex-direction: column;
@@ -165,7 +168,7 @@ img {
   height: 20rem;
 }
 
-.header-card:last-child {
+.card-items:last-child {
   background-color: #FAB131;
   display: flex;
   flex-direction: column;
@@ -278,6 +281,16 @@ h2 {
   color: rgba(0, 0, 0, 0.8);
 }
 
+@media screen and (min-width: 900px) {
+  .list-item {
+    width: 17%;
+    justify-content: center;
+  }
+}
+.page-wrapper {
+  background-color: #a9a19e;
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
@@ -305,16 +318,23 @@ h2 {
   align-items: center;
   justify-content: center;
   isolation: isolate;
+  box-shadow: 0 4px 4px grey;
 }
 
 .page-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem 1rem 5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   position: relative;
-  gap: 4em;
   background-color: #a9a19e;
+}
+.page-section .card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 5rem 1rem;
+  gap: 4em;
 }
 .page-section h1 {
   color: white;
@@ -402,6 +422,9 @@ h2 {
 .guide-card:first-child {
   background-color: #c7ddea;
 }
+.guide-card:nth-of-type(3) {
+  background-color: rgb(235, 235, 235);
+}
 .guide-card .guide-title {
   text-align: center;
   font-size: 3rem;
@@ -424,6 +447,85 @@ h2 {
   background-color: #f17949;
 }
 
+@media screen and (min-width: 900px) {
+  .page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .page-header {
+    display: flex;
+    height: 30rem;
+    background-color: #c7ddea;
+  }
+  .page-header .header-card {
+    width: 50%;
+    padding: 0;
+  }
+  .page-header .header-card:first-child img {
+    scale: 0.55;
+    transform: translate(11rem, -24rem);
+  }
+  .page-header .header-card:first-child h1 {
+    font-size: 2.5rem;
+    margin: 2.7rem 3rem 0.6rem 5rem;
+  }
+  .page-header .header-card:first-child p {
+    margin: 0 6rem 0 5rem;
+    line-height: 1.3rem;
+  }
+  .page-header .header-card .card-items {
+    height: 50%;
+  }
+  .list-item {
+    width: 17%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 900px) and (min-width: 900px) {
+  .page-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .section-left {
+    width: 35%;
+    margin: 0.5em 0.5em 0.5em 2.5rem;
+  }
+  .section-right {
+    width: 35%;
+    margin: 0.5em 5em 0.5em 0.5rem;
+  }
+}
+@media screen and (min-width: 900px) and (min-width: 900px) {
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-text h1, .section-text p {
+    width: 53%;
+  }
+  .section-text h1 {
+    margin: 12rem 0 2rem 0;
+  }
+  .section-text p {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 900px) {
+  .page-guide {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-guide .guide-card {
+    height: 17rem;
+    width: 33.3%;
+  }
+  .page-guide .guide-card .guide-info, .page-guide .guide-card .guide-title {
+    margin-top: 4.5rem;
+  }
+}
 p, button, li, textarea {
   font-family: "Fira Sans", sans-serif;
   line-height: 2;

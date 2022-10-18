@@ -1,11 +1,8 @@
 /* Header for landing page */
-.header-card {
-    padding: 1em;
-}
-
+  
 .header-card:first-child {
     background-color: #C7DDEA;
-    padding: 3em 1em 0 1em;
+    padding: 1em 1em 0 1em;
     
   
     
@@ -14,16 +11,17 @@
     }
 }
 
-.header-card:nth-child(2) {
+.card-items:first-child {
     background-color: #F17949;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20rem;
+
 }
 
-.header-card:last-child {
+.card-items:last-child {
     background-color: #FAB131;
     display: flex;
     flex-direction: column;
