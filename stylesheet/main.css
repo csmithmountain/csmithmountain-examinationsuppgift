@@ -150,6 +150,27 @@ img {
   background-color: #a9a19e;
 }
 
+@media screen and (min-width: 900px) {
+  .contact-wrapper {
+    position: relative;
+  }
+  .contact-wrapper .footer-background {
+    background-color: #a9a19e;
+    filter: brightness(70%);
+    height: 50em;
+  }
+  .contact-wrapper .contact-footer {
+    position: absolute;
+    margin-top: 0;
+    background-position-x: -94em;
+  }
+  .contact-wrapper .contact-footer .company-adress {
+    position: absolute;
+    width: 35%;
+    top: 18em;
+    left: 3em;
+  }
+}
 /* Header for landing page */
 .header-card:first-child {
   background-color: #C7DDEA;
@@ -208,6 +229,18 @@ h2 {
   transform: translateY(2.92em);
 }
 
+@media screen and (min-width: 900px) {
+  .header-contact {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .header-contact .contact-title {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+  }
+}
 /* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
 * <span style="background-color:#FAB131; padding: 0 1rem; color: black;">#FAB131</span> <!--yellow>
 * <span style="background-color:#C7DDEA; padding: 0 1rem; color: black;">#C7DDEA</span> <!--blue>
@@ -228,17 +261,17 @@ h2 {
   padding: 2rem 0;
 }
 
-.page-form {
+.title-container, .form-container {
   background-color: #A9A19E;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.page-form .buttons {
+.title-container .buttons, .form-container .buttons {
   align-self: flex-end;
   margin-right: 1.3rem;
 }
-.page-form form {
+.title-container form, .form-container form {
   display: flex;
   flex-direction: column;
 }
@@ -286,7 +319,23 @@ h2 {
     width: 17%;
     justify-content: center;
   }
+  .page-form {
+    display: flex;
+    padding: 5em 3em 0 3em;
+    justify-content: center;
+  }
+  .page-form .form-container, .page-form .title-container {
+    width: 45%;
+  }
+  .page-form .title-container .form-title {
+    margin: 0;
+  }
 }
+.isolate {
+  isolation: isolate;
+  z-index: 7;
+}
+
 .page-wrapper {
   background-color: #a9a19e;
 }
@@ -398,6 +447,7 @@ h2 {
   width: 100%;
   justify-content: center;
   text-align: center;
+  z-index: 0;
 }
 .page-section-two .section-text {
   padding: 1.5em 2.5em 5em 2.5em;
@@ -481,7 +531,7 @@ h2 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 900px) and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .page-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -496,8 +546,32 @@ h2 {
     width: 35%;
     margin: 0.5em 5em 0.5em 0.5rem;
   }
-}
-@media screen and (min-width: 900px) and (min-width: 900px) {
+  .page-section .card-wrapper {
+    position: relative;
+    width: 100%;
+    height: 15em;
+  }
+  .page-section .card-wrapper .card-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    position: absolute;
+    top: 1.5em;
+  }
+  .page-section .card-wrapper .card-container .page-card {
+    width: 30%;
+  }
+  .page-section .card-wrapper .card-container .page-card .card-container-adult .card-img, .page-section .card-wrapper .card-container .page-card .card-container-child .card-img, .page-section .card-wrapper .card-container .page-card .card-container-old .card-img {
+    transform: translateY(-13em);
+    scale: 0.5;
+  }
+  .page-section .card-wrapper .card-container .page-card .card-container-adult .adult, .page-section .card-wrapper .card-container .page-card .card-container-child .adult, .page-section .card-wrapper .card-container .page-card .card-container-old .adult {
+    scale: 0.4;
+  }
+  .page-section .card-wrapper .card-container .page-card .card-text {
+    height: 7em;
+    padding: 1em 1em 3em 1em;
+  }
   .section-text {
     display: flex;
     flex-direction: column;
@@ -512,8 +586,6 @@ h2 {
   .section-text p {
     line-height: 1.5;
   }
-}
-@media screen and (min-width: 900px) {
   .page-guide {
     display: flex;
     flex-wrap: wrap;

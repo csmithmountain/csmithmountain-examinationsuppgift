@@ -82,3 +82,33 @@
 .background-color {
     background-color: #a9a19e;
 }
+
+@media screen and (min-width:900px) {
+    .contact-wrapper {
+        position: relative;
+
+        .footer-background {
+            background-color: #a9a19e;
+            filter: brightness(70%);
+            height: 50em;
+        }
+
+        .contact-footer {
+            position: absolute;
+            margin-top: 0;
+
+            background-position-x: -94em;
+            
+            .company-adress {
+                position: absolute;
+                width: 35%;
+                top: 18em;
+                left: 3em;
+
+            }
+          
+        }
+      
+        
+    }
+}

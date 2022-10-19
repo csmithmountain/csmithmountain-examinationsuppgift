@@ -1,3 +1,9 @@
+.isolate {
+    isolation: isolate;
+    z-index: 7;
+}
+
+
 .page-wrapper {
     background-color: #a9a19e;
 }
@@ -135,6 +141,7 @@
     width: 100%;
     justify-content: center;
     text-align: center;
+    z-index: 0;
     
     .section-text {
         padding: 1.5em 2.5em 5em 2.5em;
@@ -235,7 +242,7 @@
             width: 17%;
             justify-content: center;
         }
-
+    }
         //your personal...
         @media screen and(min-width:900px) {
             .page-section {
@@ -253,10 +260,58 @@
                 width: 35%;
                 margin: .5em 5em .5em .5rem ;
             }
+        
+
+        //cards    
+
+    .page-section {
+        
+        .card-wrapper {
+            position: relative;
+            width: 100%;
+            height: 15em;
+
+            .card-container {
+            flex-direction: row; 
+            justify-content: center;
+            gap: 1.5em;
+            position: absolute; //behöver en relative förälder = card-wrapper
+            top: 1.5em;
+           
+            .page-card {
+                width: 30%;  
+                
+                
+                
+                .card-container-adult, .card-container-child, .card-container-old {
+                    //display: flex;
+
+
+                    .card-img {
+                       transform: translateY(-13em);
+                       scale: .5;
+                       
+                }
+                .adult {
+                    scale: .4;
+                }
+                }
+                
+                .card-text {
+                    height: 7em;
+                    padding: 1em 1em 3em 1em;
+
+                   
+                    }
+                } 
+            }          
         }
+    }
+        
+
 
         // About us
-@media screen and(min-width:900px){
+//@media screen and(min-width:900px){ ta bort, överflödig
     .section-text {
         display: flex;
         flex-direction: column;
@@ -273,7 +328,7 @@
             line-height: 1.5;
         }
     }
-}
+
 
         // page-guide
         .page-guide {
@@ -289,6 +344,5 @@
                 }
             }
         }
-
-
+   // } ta bort
 }

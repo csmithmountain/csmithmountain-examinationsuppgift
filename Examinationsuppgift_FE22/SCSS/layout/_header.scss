@@ -69,7 +69,17 @@ h2 {
     }
 }
 
+@media screen and (min-width:900px) {
+    .header-contact {
+        justify-content: center;
+        flex-wrap: nowrap;
 
+        .contact-title {
+            width: fit-content;
+            padding: 0;
+        }
+    }
+}
 
 
 /* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
