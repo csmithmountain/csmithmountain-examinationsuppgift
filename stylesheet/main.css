@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Importing google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Frank+Ruhl+Libre:wght@700&display=swap");
 body, html {
   margin: 0 auto;
@@ -50,6 +52,7 @@ textarea {
   justify-content: space-evenly;
 }
 
+/* desktop changes */
 @media screen and (max-width: 899px) {
   .desktop-button {
     display: none;
@@ -71,15 +74,18 @@ img {
   width: 100%;
 }
 
+/* Family */
 .family {
   bottom: 0;
 }
 
+/* your personal safety */
 .card-container {
   border-radius: 10px;
   overflow: hidden;
 }
 
+/* index.html */
 .page-footer {
   padding: 0 0 20rem 0;
   display: flex;
@@ -105,7 +111,9 @@ img {
 .page-footer .footer-button:hover {
   opacity: 0.7;
 }
-.page-footer .company-adress {
+
+/* contact.html */
+.company-adress {
   background-color: #FAB131;
 }
 
@@ -150,6 +158,7 @@ img {
   background-color: #a9a19e;
 }
 
+/* Desktop changes */
 @media screen and (min-width: 900px) {
   .contact-wrapper {
     position: relative;
@@ -229,6 +238,7 @@ h2 {
   transform: translateY(2.92em);
 }
 
+/* changes desktop */
 @media screen and (min-width: 900px) {
   .header-contact {
     justify-content: center;
@@ -241,10 +251,7 @@ h2 {
     padding: 0;
   }
 }
-/* <span style="background-color:#F17949; padding: 0 1rem;">#F17949</span> <!--orange>
-* <span style="background-color:#FAB131; padding: 0 1rem; color: black;">#FAB131</span> <!--yellow>
-* <span style="background-color:#C7DDEA; padding: 0 1rem; color: black;">#C7DDEA</span> <!--blue>
-* <span style="background-color:#A9A19E; padding: 0 1rem">#A9A19E</span> <!--grey> */
+/* navigation */
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +268,7 @@ h2 {
   padding: 2rem 0;
 }
 
+/* contact page */
 .title-container, .form-container {
   background-color: #A9A19E;
   display: flex;
@@ -276,6 +284,7 @@ h2 {
   flex-direction: column;
 }
 
+/* page-nav */
 .form-title {
   color: white;
   font-size: 3rem;
@@ -314,11 +323,14 @@ h2 {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/* desktop changes */
+/* nav */
 @media screen and (min-width: 900px) {
   .list-item {
     width: 17%;
     justify-content: center;
   }
+  /*form, input*/
   .page-form {
     display: flex;
     padding: 5em 3em 0 3em;
@@ -331,11 +343,7 @@ h2 {
     margin: 0;
   }
 }
-.isolate {
-  isolation: isolate;
-  z-index: 7;
-}
-
+/* landing page */
 .page-wrapper {
   background-color: #a9a19e;
 }
@@ -366,7 +374,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  isolation: isolate;
+  isolation: isolate; /* Ingenting inuti page-card kan hamna bakom! */
   box-shadow: 0 4px 4px grey;
 }
 
@@ -403,9 +411,6 @@ h2 {
 .card-container-child .card-img {
   transform: translateY(-16em);
   scale: 0.5;
-  /*  &:hover {
-        transform: translateY(-18em);
-    } */
 }
 
 .card-container-adult {
@@ -420,9 +425,6 @@ h2 {
 .card-container-adult .card-img {
   transform: translateY(-17em);
   scale: 0.4;
-  /* &:hover {
-       transform: translateY(-27em);
-   } */
 }
 
 .card-container-old {
@@ -437,9 +439,6 @@ h2 {
 .card-container-old .card-img {
   transform: translateY(-17em);
   scale: 0.5;
-  /* &:hover {
-       transform: translateY(-27em);
-   } */
 }
 
 .page-section-two {
@@ -497,6 +496,7 @@ h2 {
   background-color: #f17949;
 }
 
+/* header */
 @media screen and (min-width: 900px) {
   .page-wrapper {
     max-width: 900px;
@@ -527,11 +527,13 @@ h2 {
   .page-header .header-card .card-items {
     height: 50%;
   }
+  /* navbar */
   .list-item {
     width: 17%;
     justify-content: center;
   }
 }
+/* desktop changes */
 @media screen and (min-width: 900px) {
   .page-section {
     flex-direction: row;
@@ -547,6 +549,7 @@ h2 {
     width: 35%;
     margin: 0.5em 5em 0.5em 0.5rem;
   }
+  /* cards */
   .page-section .card-wrapper {
     position: relative;
     width: 100%;
@@ -556,7 +559,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     gap: 1.5em;
-    position: absolute;
+    position: absolute; /* behöver en relative förälder = card-wrapper */
     top: 1.5em;
   }
   .page-section .card-wrapper .card-container .page-card {
@@ -573,6 +576,7 @@ h2 {
     height: 7em;
     padding: 1em 1em 3em 1em;
   }
+  /* About us */
   .section-text {
     display: flex;
     flex-direction: column;
@@ -587,6 +591,7 @@ h2 {
   .section-text p {
     line-height: 1.5;
   }
+  /* page-guide */
   .page-guide {
     display: flex;
     flex-wrap: wrap;
@@ -620,4 +625,6 @@ h3 {
 em {
   color: white;
   font-style: normal;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*Font*//*# sourceMappingURL=main.css.map */
